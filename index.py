@@ -19,7 +19,7 @@ disciplinas = sorted([
     "Educação Moral e Cívica"
 ])
 
-# EFEITO DE COR QUANDO PASSA O MOUSE NO BOTÃO
+# --- EFEITO DE COR QUANDO PASSA O MOUSE NO BOTÃO ---
 
 
 def on_enter(e):
@@ -52,7 +52,7 @@ def estilizar_botao(btn):
     btn.bind("<Enter>", on_enter)
     btn.bind("<Leave>", on_leave)
 
-# JANELA DE CADASTRAR ALUNO 
+# ---------- JANELA DE CADASTRAR ALUNO ----------
 
 
 def criar_janela_cadastro():
@@ -71,7 +71,7 @@ def criar_janela_cadastro():
     frame = tk.Frame(cadastro, bg=cor_fundo)
     frame.pack(padx=15, pady=15, fill='both', expand=True)
 
-    #  Parte onde escreve o nome e sala do aluno
+    # --- Parte onde escreve o nome e sala do aluno ---
     titulo_dados = tk.Label(frame, text="Dados Pessoais",
                             font=("Arial", 14, "bold"), bg=cor_fundo)
     titulo_dados.grid(row=0, column=0, columnspan=5, sticky='w', pady=(0, 10))
@@ -105,7 +105,7 @@ def criar_janela_cadastro():
     entrada_turma = tk.Entry(frame)
     entrada_turma.grid(row=2, column=4, sticky='we', padx=5, pady=5)
 
-    # Parte onde escreve as notas do aluno
+    # --- Parte onde escreve as notas do aluno ---
     titulo_materias = tk.Label(frame, text="Matérias", font=(
         "Arial", 14, "bold"), bg=cor_fundo)
     titulo_materias.grid(row=3, column=0, columnspan=5,
@@ -297,7 +297,7 @@ def criar_janela_cadastro():
     for btn in (btn_salvar, btn_voltar, btn_sair):
         estilizar_botao(btn)
 
-# JANELA DE CONSULTA DE NOTAS
+# ---------- JANELA DE CONSULTA DE NOTAS ----------
 
 
 def criar_janela_consulta():
@@ -460,7 +460,7 @@ def criar_janela_consulta():
     for btn in (btn_atualizar, btn_voltar, btn_sair):
         estilizar_botao(btn)
 
-# JANELA DO MENU PRINCIPAL
+# ---------- JANELA DO MENU PRINCIPAL ----------
 
 
 janela_menu = tk.Tk()  # Cria a janela principal
