@@ -2,7 +2,7 @@ SISTEMA DE GERENCIAMENTO DE NOTAS ESCOLARES
 
 INTEGRANTES;
 
-Ryan Gabriel Gomes Vieira RGM:39261913
+Ryan Gabriel Gomes Vieira RGM:39261913;
 
 Victor Silva Amador RGM: 38136104
 
